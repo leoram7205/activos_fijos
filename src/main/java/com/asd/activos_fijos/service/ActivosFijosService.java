@@ -12,11 +12,14 @@ public interface ActivosFijosService extends GenericService<ActivosFijos, String
 	
 	ActivosFijosDTO findByid(String id);
 	
-//	List<ActivosFijosDTO> findByPlPeriodo(String periodo);
+	List<ActivosFijosDTO> findByAfTipoActivo(String tipoActivo);
 	
-	ActivosFijosDTO save(ActivosFijosDTO activosFijosDto);
+	List<ActivosFijosDTO> findByAfFechaCompra(String fechaCompra) throws Exception;
+	
+	ActivosFijosDTO findByAfSerial(String serial);
+	
+	ActivosFijosDTO save(ActivosFijosDTO activosFijosDto) throws Exception;
 	
 	void delete(ActivosFijosDTO activosFijosDto);
 	
-//	List<ActivosFijosDTO> findByPlEstado(String estado);
 }

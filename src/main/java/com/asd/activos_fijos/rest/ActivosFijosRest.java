@@ -32,14 +32,14 @@ private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.cl
 	private ActivosFijosService activosFijosService;
 	
 	@GetMapping(value="/all")
-	@ApiOperation(value = "ActivosFijos", nickname = "Consultar todas las activosFijos")
+	@ApiOperation(value = "ActivosFijos", nickname = "Consultar todos los Activo Fijo")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
 	public List<ActivosFijosDTO> getAll(){
 		return activosFijosService.findAll();
 	}
 	
 	@GetMapping(value="/get/{id}")
-	@ApiOperation(value = "ActivosFijos", nickname = "Consultar ciudad por Id")
+	@ApiOperation(value = "ActivosFijos", nickname = "Consultar Activo Fijo por Id")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
 	public ResponseEntity<ActivosFijosDTO> get(@PathVariable String id){
 		
@@ -48,7 +48,7 @@ private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.cl
 	}
 	
 	@PostMapping(value = "/save")
-	@ApiOperation(value = "ActivosFijos", nickname = "Creación ciudad")
+	@ApiOperation(value = "ActivosFijos", nickname = "Creación Activo Fijo")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
 	public ResponseEntity<ActivosFijosDTO> save(@RequestBody ActivosFijosDTO activosFijosDto) throws Exception {
 		ActivosFijosDTO obj = new ActivosFijosDTO();
@@ -72,6 +72,33 @@ private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.cl
 		}
 		
 		return new ResponseEntity<ActivosFijosDTO>(activosFijosDto, HttpStatus.OK);
+		
+	}
+	
+	@GetMapping(value="/findByTipoActivo/{tipoActivo}")
+	@ApiOperation(value = "ActivosFijos", nickname = "Consultar Activo Fijo por Id")
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
+	public ResponseEntity<List<ActivosFijosDTO>> findByTipoActivo(@PathVariable String tipoActivo){
+		
+		return new ResponseEntity<List<ActivosFijosDTO>>(activosFijosService.findByAfTipoActivo(tipoActivo), HttpStatus.OK);
+		
+	}
+	
+	@GetMapping(value="/findByFechaCompra/{fechaCompra}")
+	@ApiOperation(value = "ActivosFijos", nickname = "Consultar Activo Fijo por Fecha Compra")
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
+	public ResponseEntity<List<ActivosFijosDTO>> findByFechaCompra(@PathVariable String fechaCompra) throws Exception{
+		
+		return new ResponseEntity<List<ActivosFijosDTO>>(activosFijosService.findByAfFechaCompra(fechaCompra), HttpStatus.OK);
+		
+	}
+	
+	@GetMapping(value="/findBySerial/{serial}")
+	@ApiOperation(value = "ActivosFijos", nickname = "Consultar Activo Fijo por Serial")
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
+	public ResponseEntity<ActivosFijosDTO> findBySerial(@PathVariable String serial){
+		
+		return new ResponseEntity<ActivosFijosDTO>(activosFijosService.findByAfSerial(serial), HttpStatus.OK);
 		
 	}
 }

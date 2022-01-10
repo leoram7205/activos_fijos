@@ -1,6 +1,9 @@
 package com.asd.activos_fijos.service.impl;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -51,10 +54,20 @@ public class ActivosFijosServiceImpl extends GenericServiceImpl<ActivosFijos, St
 	}
 
 	@Override
-	public ActivosFijosDTO save(ActivosFijosDTO activosFijosDto) {
+	public ActivosFijosDTO save(ActivosFijosDTO activosFijosDto) throws Exception {
 		ActivosFijos activosFijos = MHelpers.modelMapper().map(activosFijosDto, ActivosFijos.class);
-		activosFijos =  this.activosFijosDao.save(activosFijos);
-		activosFijosDto = MHelpers.modelMapper().map(activosFijos, ActivosFijosDTO.class);
+		
+		try {
+			if(!activosFijos.getAfFechaBaja().toString().isBlank() && !activosFijos.getAfFechaBaja().toString().isEmpty()) {
+				if(activosFijos.getAfFechaCompra().after(activosFijos.getAfFechaBaja())) {
+					throw new Exception("Error: La fecha de compra no debe ser posterior a la fecha de baja");
+				}
+			}
+			activosFijos =  this.activosFijosDao.save(activosFijos);
+			activosFijosDto = MHelpers.modelMapper().map(activosFijos, ActivosFijosDTO.class);
+		}catch(Exception e) {
+			throw new Exception(e.getMessage());
+		}
 		
 		return activosFijosDto;
 	}
@@ -63,6 +76,55 @@ public class ActivosFijosServiceImpl extends GenericServiceImpl<ActivosFijos, St
 	public void delete(ActivosFijosDTO activosFijosDto) {
 		ActivosFijos activosFijos = MHelpers.modelMapper().map(activosFijosDto, ActivosFijos.class);
 		this.activosFijosDao.delete(activosFijos);
+	}
+
+	@Override
+	public List<ActivosFijosDTO> findByAfTipoActivo(String tipoActivo) {
+		List<ActivosFijosDTO> listaActivosFijosDto = new ArrayList<>();
+		
+		Iterable<ActivosFijos> activosFijosItr = this.activosFijosDao.findByAfTipoActivo(tipoActivo);
+		
+		for(ActivosFijos activoFijo: activosFijosItr) {
+			
+			ActivosFijosDTO activosFijosDto = new ActivosFijosDTO();
+			activosFijosDto = MHelpers.modelMapper().map(activoFijo, ActivosFijosDTO.class);
+			listaActivosFijosDto.add(activosFijosDto);
+		}
+		
+		return listaActivosFijosDto;
+	}
+
+	@Override
+	public List<ActivosFijosDTO> findByAfFechaCompra(String fechaCompra) throws Exception {
+		List<ActivosFijosDTO> listaActivosFijosDto = new ArrayList<>();
+		
+		SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd"); 
+		Date fecha;
+		try {
+			fecha = formato.parse(fechaCompra);
+			Iterable<ActivosFijos> activosFijosItr = this.activosFijosDao.findByAfFechaCompra(fecha);
+			
+			for(ActivosFijos activoFijo: activosFijosItr) {
+				
+				ActivosFijosDTO activosFijosDto = new ActivosFijosDTO();
+				activosFijosDto = MHelpers.modelMapper().map(activoFijo, ActivosFijosDTO.class);
+				listaActivosFijosDto.add(activosFijosDto);
+			}
+		} catch (ParseException e) {
+			throw new Exception(e.getMessage());
+		}
+		
+		
+		
+		return listaActivosFijosDto;
+	}
+
+	@Override
+	public ActivosFijosDTO findByAfSerial(String serial) {
+		Optional<ActivosFijos> activosFijos = this.activosFijosDao.findByAfSerial(serial);
+		ActivosFijosDTO activosFijosDto = MHelpers.modelMapper().map(activosFijos.get(), ActivosFijosDTO.class);
+		
+		return activosFijosDto;
 	}
 
 }

@@ -166,11 +166,11 @@ public class ActivosFijos {
 		this.afFechaCompra = afFechaCompra;
 	}
 
-	public Float getAfValorCompra() {
+	public Double getAfValorCompra() {
 		return afValorCompra;
 	}
 
-	public void setAfValorCompra(Float afValorCompra) {
+	public void setAfValorCompra(Double afValorCompra) {
 		this.afValorCompra = afValorCompra;
 	}
 
