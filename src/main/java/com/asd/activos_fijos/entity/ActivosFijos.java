@@ -6,8 +6,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -30,17 +28,13 @@ public class ActivosFijos {
 	@Column(name = "af_descripcion", columnDefinition = "VARCHAR(100)")
 	private String afDescripcion;
 	
-	@ManyToOne
-	@JoinColumn(name="ta_llave")
 	@Column(name = "af_tipoactivo", columnDefinition = "VARCHAR(36)")
 	private String afTipoActivo;
 	
 	@Column(name = "af_serial", columnDefinition = "VARCHAR(20)")
 	private String afSerial;
 	
-	@ManyToOne
-	@JoinColumn(name="at_llave")
-	@Column(name = "af_numeroinventario", columnDefinition = "VARCHAR(36)")
+	@Column(name = "af_numeroinventario", columnDefinition = "VARCHAR(100)")
 	private String afNumeroInventario;
 	
 	@Column(name = "af_peso", columnDefinition = "NUMERIC")
@@ -70,13 +64,9 @@ public class ActivosFijos {
 	@Column(name = "af_color", columnDefinition = "VARCHAR(30)")
 	private String afColor;
 	
-	@ManyToOne
-	@JoinColumn(name="pe_llave")
 	@Column(name = "af_asignado", columnDefinition = "VARCHAR(36)")
 	private String afAsignado;
 	
-	@ManyToOne
-	@JoinColumn(name="ar_llave")
 	@Column(name = "af_areaasignada", columnDefinition = "VARCHAR(36)")
 	private String afAreaAsignada;
 
@@ -176,11 +166,11 @@ public class ActivosFijos {
 		this.afFechaCompra = afFechaCompra;
 	}
 
-	public Double getAfValorCompra() {
+	public Float getAfValorCompra() {
 		return afValorCompra;
 	}
 
-	public void setAfValorCompra(Double afValorCompra) {
+	public void setAfValorCompra(Float afValorCompra) {
 		this.afValorCompra = afValorCompra;
 	}
 
@@ -224,5 +214,4 @@ public class ActivosFijos {
 		this.afAreaAsignada = afAreaAsignada;
 	}
 
-	
 }
