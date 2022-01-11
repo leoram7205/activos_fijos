@@ -5,7 +5,6 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,7 +25,7 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping(value = "/activosFijos")
 public class ActivosFijosRest {
-private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.class);
+	private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.class);
 	
 	@Autowired
 	private ActivosFijosService activosFijosService;
@@ -35,6 +34,7 @@ private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.cl
 	@ApiOperation(value = "ActivosFijos", nickname = "Consultar todos los Activo Fijo")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
 	public List<ActivosFijosDTO> getAll(){
+		logger.info("Consulta todos los registros de activos");
 		return activosFijosService.findAll();
 	}
 	
@@ -50,15 +50,10 @@ private static final Logger logger = LoggerFactory.getLogger(ActivosFijosRest.cl
 	@PostMapping(value = "/save")
 	@ApiOperation(value = "ActivosFijos", nickname = "Creación Activo Fijo")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
-	public ResponseEntity<ActivosFijosDTO> save(@RequestBody ActivosFijosDTO activosFijosDto) throws Exception {
+	public ResponseEntity<ActivosFijosDTO> save(@RequestBody ActivosFijosDTO activosFijosDto)  {
 		ActivosFijosDTO obj = new ActivosFijosDTO();
-		
-		try {
-			obj = activosFijosService.save(activosFijosDto);
-		}catch(DataIntegrityViolationException ex) {
-			logger.error(ex.getMessage().toString());
-			throw new Exception(ex.getCause().getCause().getMessage());
-		}
+
+		obj = activosFijosService.save(activosFijosDto);
 		return new ResponseEntity<ActivosFijosDTO>(obj, HttpStatus.ACCEPTED);
 	}
 	

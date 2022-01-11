@@ -1,10 +1,7 @@
 package com.asd.activos_fijos.rest;
 
-import java.sql.SQLException;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,8 +27,6 @@ import io.swagger.annotations.ApiResponses;
 @RequestMapping(value = "/areas")
 public class AreasRest {
 	
-	private static final Logger logger = LoggerFactory.getLogger(AreasRest.class);
-	
 	@Autowired
 	private AreasService areasService;
 	
@@ -54,15 +49,10 @@ public class AreasRest {
 	@PostMapping(value = "/save")
 	@ApiOperation(value = "areas", nickname = "Creación área")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Resultado Exisotso", response = ResponseEntity.class)})
-	public ResponseEntity<AreasDTO> save(@RequestBody AreasDTO areasDto) throws SQLException {
+	public ResponseEntity<AreasDTO> save(@RequestBody AreasDTO areasDto) {
 		AreasDTO obj = new AreasDTO();
 		
-		try {
-			obj = this.areasService.save(areasDto);
-		}catch(SQLException ex) {
-			logger.error(ex.getMessage());
-			throw new SQLException(ex.getMessage());
-		}
+		obj = this.areasService.save(areasDto);
 		return new ResponseEntity<AreasDTO>(obj, HttpStatus.ACCEPTED);
 	}
 	

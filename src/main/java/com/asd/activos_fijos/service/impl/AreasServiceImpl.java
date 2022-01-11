@@ -1,14 +1,10 @@
 package com.asd.activos_fijos.service.impl;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
@@ -17,15 +13,12 @@ import com.asd.activos_fijos.dao.AreasDAO;
 import com.asd.activos_fijos.dao.CiudadesDAO;
 import com.asd.activos_fijos.dto.AreasDTO;
 import com.asd.activos_fijos.entity.Areas;
-import com.asd.activos_fijos.rest.AreasRest;
 import com.asd.activos_fijos.service.AreasService;
 import com.asd.activos_fijos.utils.MHelpers;
 
 @Service
 public class AreasServiceImpl extends GenericServiceImpl<Areas, String> implements AreasService{
 
-	private static final Logger logger = LoggerFactory.getLogger(AreasRest.class);
-	
 	@Autowired
 	AreasDAO areasDao;
 	
@@ -62,17 +55,12 @@ public class AreasServiceImpl extends GenericServiceImpl<Areas, String> implemen
 	}
 
 	@Override
-	public AreasDTO save(AreasDTO areasDto) throws SQLException {
+	public AreasDTO save(AreasDTO areasDto)  {
 		Areas areas = MHelpers.modelMapper().map(areasDto, Areas.class);
 		
-		try {
-			areas =  this.areasDao.save(areas);
-			areasDto = MHelpers.modelMapper().map(areas, AreasDTO.class);
-		}catch(DataIntegrityViolationException ex) {
-			logger.error(ex.getCause().getLocalizedMessage());
-			logger.error(ex.getCause().getMessage());
-			throw new SQLException(ex.getCause().getMessage());
-		}
+		areas =  this.areasDao.save(areas);
+		areasDto = MHelpers.modelMapper().map(areas, AreasDTO.class);
+		
 		return areasDto;
 	}
 

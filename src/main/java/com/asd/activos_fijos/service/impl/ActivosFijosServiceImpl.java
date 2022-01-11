@@ -15,6 +15,7 @@ import com.asd.activos_fijos.commons.impl.GenericServiceImpl;
 import com.asd.activos_fijos.dao.ActivosFijosDAO;
 import com.asd.activos_fijos.dto.ActivosFijosDTO;
 import com.asd.activos_fijos.entity.ActivosFijos;
+import com.asd.activos_fijos.exception.RequestException;
 import com.asd.activos_fijos.service.ActivosFijosService;
 import com.asd.activos_fijos.utils.MHelpers;
 
@@ -54,20 +55,18 @@ public class ActivosFijosServiceImpl extends GenericServiceImpl<ActivosFijos, St
 	}
 
 	@Override
-	public ActivosFijosDTO save(ActivosFijosDTO activosFijosDto) throws Exception {
+	public ActivosFijosDTO save(ActivosFijosDTO activosFijosDto) {
 		ActivosFijos activosFijos = MHelpers.modelMapper().map(activosFijosDto, ActivosFijos.class);
 		
-		try {
-			if(!activosFijos.getAfFechaBaja().toString().isBlank() && !activosFijos.getAfFechaBaja().toString().isEmpty()) {
-				if(activosFijos.getAfFechaCompra().after(activosFijos.getAfFechaBaja())) {
-					throw new Exception("Error: La fecha de compra no debe ser posterior a la fecha de baja");
-				}
+		if(!activosFijos.getAfFechaBaja().toString().isBlank() && !activosFijos.getAfFechaBaja().toString().isEmpty()) {
+			if(activosFijos.getAfFechaCompra().after(activosFijos.getAfFechaBaja())) {
+				throw new RequestException("400","Error: La fecha de compra no debe ser posterior a la fecha de baja");
 			}
-			activosFijos =  this.activosFijosDao.save(activosFijos);
-			activosFijosDto = MHelpers.modelMapper().map(activosFijos, ActivosFijosDTO.class);
-		}catch(Exception e) {
-			throw new Exception(e.getMessage());
 		}
+		
+		
+		activosFijos =  this.activosFijosDao.save(activosFijos);
+		activosFijosDto = MHelpers.modelMapper().map(activosFijos, ActivosFijosDTO.class);
 		
 		return activosFijosDto;
 	}
@@ -125,6 +124,51 @@ public class ActivosFijosServiceImpl extends GenericServiceImpl<ActivosFijos, St
 		ActivosFijosDTO activosFijosDto = MHelpers.modelMapper().map(activosFijos.get(), ActivosFijosDTO.class);
 		
 		return activosFijosDto;
+	}
+
+	@Override
+	public void validaDatos(ActivosFijosDTO activosFijosDto) {
+		if(activosFijosDto.getAfCodigo().isEmpty() || activosFijosDto.getAfCodigo().isBlank()) {
+			throw new RequestException("400","Error: Debe enviar el código de activo");
+		}
+		
+		if(activosFijosDto.getAfNombre().isEmpty() || activosFijosDto.getAfNombre().isBlank()) {
+			throw new RequestException("400","Error: Debe enviar el nombre de activo");
+		}
+		
+		if(activosFijosDto.getAfDescripcion().isEmpty() || activosFijosDto.getAfDescripcion().isBlank()) {
+			throw new RequestException("400","Error: Debe enviar la descripción de activo");
+		}
+		
+		if(activosFijosDto.getAfTipoActivo().isEmpty() || activosFijosDto.getAfTipoActivo().isBlank()) {
+			throw new RequestException("400","Error: Debe enviar el tipo de activo de activo");
+		}
+		
+		if(activosFijosDto.getAfSerial().isEmpty() || activosFijosDto.getAfSerial().isBlank()) {
+			throw new RequestException("400","Error: Debe enviar el serial de activo");
+		}
+		
+		if(activosFijosDto.getAfNumeroInventario().isEmpty() || activosFijosDto.getAfNumeroInventario().isBlank()) {
+			throw new RequestException("400","Error: Debe enviar el numero de inventario");
+		}
+		
+		if(activosFijosDto.getAfPeso().isNaN() || activosFijosDto.getAfPeso().isNaN()) {
+			throw new RequestException("400","Error: Debe enviar el peso de activo");
+		}
+		
+		if(activosFijosDto.getAfAlto().isNaN() || activosFijosDto.getAfAlto().isNaN()) {
+			throw new RequestException("400","Error: Debe enviar el alto de activo");
+		}
+
+		if(activosFijosDto.getAfAncho().isNaN() || activosFijosDto.getAfAncho().isNaN()) {
+			throw new RequestException("400","Error: Debe enviar el ancho de activo");
+		}
+		
+		if(activosFijosDto.getAfLargo().isNaN() || activosFijosDto.getAfLargo().isNaN()) {
+			throw new RequestException("400","Error: Debe enviar el código de activo");
+		}
+		
+		
 	}
 
 }

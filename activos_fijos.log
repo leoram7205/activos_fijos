@@ -1,0 +1,875 @@
+"2022-01-10 15:50:06 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 4708 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 15:50:06 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 15:50:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 15:50:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 145 ms. Found 6 JPA repository interfaces.
+""2022-01-10 15:50:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4127062c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 15:50:10 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 15:50:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 15:50:11 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 15:50:11 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 15:50:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 15:50:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 4957 ms
+""2022-01-10 15:50:12 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 15:50:12 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 15:50:12 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 15:50:13 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 15:50:14 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 15:50:14 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 15:50:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 15:50:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 15:50:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 15:50:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 15:50:19 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 13.277 seconds (JVM running for 15.576)
+""2022-01-10 15:50:56 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 15:50:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 15:50:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 2 ms
+""2022-01-10 15:50:56 [http-nio-8080-exec-1] INFO  c.a.a.rest.ActivosFijosRest- Consulta todos los registros de activos
+""2022-01-10 15:53:13 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 15:53:13 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 15:53:13 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 15:53:13 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 15:53:20 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 5812 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 15:53:20 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 15:53:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 15:53:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 148 ms. Found 6 JPA repository interfaces.
+""2022-01-10 15:53:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$441acd0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 15:53:22 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 15:53:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 15:53:23 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 15:53:23 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 15:53:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 15:53:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 3863 ms
+""2022-01-10 15:53:24 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 15:53:24 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 15:53:24 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 15:53:25 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 15:53:25 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 15:53:26 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 15:53:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 15:53:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 15:53:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 15:53:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 15:53:32 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 13.856 seconds (JVM running for 15.66)
+""2022-01-10 15:53:48 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 15:53:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 15:53:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 5 ms
+""2022-01-10 15:53:48 [http-nio-8080-exec-2] INFO  c.a.a.rest.ActivosFijosRest- Consulta todos los registros de activos
+""2022-01-10 15:54:00 [http-nio-8080-exec-3] INFO  c.a.a.rest.ActivosFijosRest- Consulta todos los registros de activos
+""2022-01-10 15:55:48 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja] with root cause
+"java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja
+	at com.asd.activos_fijos.service.impl.ActivosFijosServiceImpl.save(ActivosFijosServiceImpl.java:69)
+	at com.asd.activos_fijos.rest.ActivosFijosRest.save(ActivosFijosRest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+"2022-01-10 15:57:42 [http-nio-8080-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 15:57:42 [http-nio-8080-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «activos_fijos» viola la llave foránea «af_ta_fk»
+  Detail: La llave (af_tipoactivo)=(123456) no está presente en la tabla «tipo_activo».
+""2022-01-10 15:57:42 [http-nio-8080-exec-8] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 15:57:42 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+"java.lang.Exception: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.asd.activos_fijos.service.impl.ActivosFijosServiceImpl.save(ActivosFijosServiceImpl.java:69)
+	at com.asd.activos_fijos.rest.ActivosFijosRest.save(ActivosFijosRest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+"2022-01-10 16:47:39 [RMI TCP Connection(63)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 16:47:46 [RMI TCP Connection(63)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 16:47:47 [RMI TCP Connection(63)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 16:47:48 [RMI TCP Connection(63)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 17:14:23 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 8932 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 17:14:23 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 17:14:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 17:14:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 360 ms. Found 6 JPA repository interfaces.
+""2022-01-10 17:14:32 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$dc641d93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 17:14:32 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 17:14:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 17:14:33 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 17:14:33 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 17:14:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 17:14:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 10083 ms
+""2022-01-10 17:14:35 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 17:14:36 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 17:14:36 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 17:14:37 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 17:14:38 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 17:14:39 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 17:14:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 17:14:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 17:14:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 17:14:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 17:14:49 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 28.813 seconds (JVM running for 34.128)
+""2022-01-10 17:15:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 17:15:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 17:15:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+""2022-01-10 17:15:20 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja] with root cause
+"java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja
+	at com.asd.activos_fijos.service.impl.ActivosFijosServiceImpl.save(ActivosFijosServiceImpl.java:69)
+	at com.asd.activos_fijos.rest.ActivosFijosRest.save(ActivosFijosRest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+"2022-01-10 17:15:40 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 17:15:40 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 17:15:40 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 17:15:40 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 17:15:51 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 5092 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 17:15:51 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 17:15:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 17:15:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 205 ms. Found 6 JPA repository interfaces.
+""2022-01-10 17:15:55 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d3f9a495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 17:15:55 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 17:15:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 17:15:56 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 17:15:56 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 17:15:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 17:15:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 4963 ms
+""2022-01-10 17:15:57 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 17:15:58 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 17:15:58 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 17:15:59 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 17:16:00 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 17:16:01 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 17:16:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 17:16:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 17:16:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 17:16:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 17:16:07 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 16.625 seconds (JVM running for 21.636)
+""2022-01-10 17:16:39 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 17:16:39 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 17:16:39 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+""2022-01-10 17:17:56 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja] with root cause
+"java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja
+	at com.asd.activos_fijos.service.impl.ActivosFijosServiceImpl.save(ActivosFijosServiceImpl.java:69)
+	at com.asd.activos_fijos.rest.ActivosFijosRest.save(ActivosFijosRest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+"2022-01-10 17:19:14 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja] with root cause
+"java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja
+	at com.asd.activos_fijos.service.impl.ActivosFijosServiceImpl.save(ActivosFijosServiceImpl.java:69)
+	at com.asd.activos_fijos.rest.ActivosFijosRest.save(ActivosFijosRest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+"2022-01-10 17:20:23 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja] with root cause
+"java.lang.Exception: Error: La fecha de compra no debe ser posterior a la fecha de baja
+	at com.asd.activos_fijos.service.impl.ActivosFijosServiceImpl.save(ActivosFijosServiceImpl.java:69)
+	at com.asd.activos_fijos.rest.ActivosFijosRest.save(ActivosFijosRest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+"2022-01-10 17:27:01 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 9684 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 17:27:01 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 17:27:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 17:27:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 218 ms. Found 6 JPA repository interfaces.
+""2022-01-10 17:27:07 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e5db189e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 17:27:08 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 17:27:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 17:27:10 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 17:27:10 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 17:27:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 17:27:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 8769 ms
+""2022-01-10 17:27:11 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 17:27:12 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 17:27:12 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 17:27:12 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 17:27:13 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 17:27:14 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 17:27:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 17:27:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 17:27:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 17:27:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 17:27:22 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 22.671 seconds (JVM running for 28.754)
+""2022-01-10 17:28:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 17:28:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 17:28:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 3 ms
+""2022-01-10 18:00:21 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 5732 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 18:00:21 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 18:00:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 18:00:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 283 ms. Found 6 JPA repository interfaces.
+""2022-01-10 18:00:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ddfb296b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 18:00:26 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 18:00:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 18:00:27 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 18:00:27 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 18:00:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 18:00:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 5708 ms
+""2022-01-10 18:00:28 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 18:00:29 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 18:00:29 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 18:00:29 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 18:00:30 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 18:00:31 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 18:00:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 18:00:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:00:34 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 18:00:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 18:00:37 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 16.795 seconds (JVM running for 19.473)
+""2022-01-10 18:00:54 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 18:00:54 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 18:00:54 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+""2022-01-10 18:15:01 [RMI TCP Connection(24)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 18:15:06 [RMI TCP Connection(24)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:15:06 [RMI TCP Connection(24)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 18:15:06 [RMI TCP Connection(24)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 18:31:58 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 2612 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 18:31:58 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 18:32:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 18:32:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 256 ms. Found 6 JPA repository interfaces.
+""2022-01-10 18:32:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a012bd94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 18:32:05 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 18:32:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 18:32:07 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 18:32:07 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 18:32:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 18:32:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 9174 ms
+""2022-01-10 18:32:08 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 18:32:09 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 18:32:09 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 18:32:10 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 18:32:11 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 18:32:12 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 18:32:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 18:32:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:32:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 18:32:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 18:32:23 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 27.908 seconds (JVM running for 34.43)
+""2022-01-10 18:33:14 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 18:33:14 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 18:33:14 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 2 ms
+""2022-01-10 18:33:44 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:33:44 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:33:44 [http-nio-8080-exec-2] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:33:44 [http-nio-8080-exec-2] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement
+""2022-01-10 18:33:44 [http-nio-8080-exec-2] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement
+""2022-01-10 18:35:38 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 18:35:46 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:35:46 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 18:35:46 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 18:45:12 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 6868 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 18:45:12 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 18:45:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 18:45:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 259 ms. Found 6 JPA repository interfaces.
+""2022-01-10 18:45:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$357b587d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 18:45:19 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 18:45:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 18:45:20 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 18:45:20 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 18:45:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 18:45:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 8129 ms
+""2022-01-10 18:45:21 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 18:45:22 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 18:45:22 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 18:45:22 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 18:45:25 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 18:45:27 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 18:45:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 18:45:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:45:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 18:45:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 18:45:35 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 26.514 seconds (JVM running for 33.851)
+""2022-01-10 18:47:28 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 18:47:29 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:47:29 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 18:47:29 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 18:47:42 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 7224 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 18:47:42 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 18:47:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 18:47:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 262 ms. Found 6 JPA repository interfaces.
+""2022-01-10 18:47:45 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7e72805] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 18:47:46 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 18:47:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 18:47:48 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 18:47:48 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 18:47:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 18:47:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 6341 ms
+""2022-01-10 18:47:49 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 18:47:50 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 18:47:50 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 18:47:50 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 18:47:51 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 18:47:52 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 18:47:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 18:47:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:47:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 18:47:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 18:47:58 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 18.426 seconds (JVM running for 21.688)
+""2022-01-10 18:50:31 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 18:50:31 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 18:50:31 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 22 ms
+""2022-01-10 18:50:33 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:50:33 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:50:33 [http-nio-8080-exec-2] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:50:33 [http-nio-8080-exec-2] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 18:55:15 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 18:55:18 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:55:18 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 18:55:18 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 18:55:31 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 6560 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 18:55:31 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 18:55:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 18:55:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 159 ms. Found 6 JPA repository interfaces.
+""2022-01-10 18:55:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7e72805] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 18:55:34 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 18:55:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 18:55:35 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 18:55:35 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 18:55:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 18:55:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 4616 ms
+""2022-01-10 18:55:36 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 18:55:37 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 18:55:37 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 18:55:37 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 18:55:38 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 18:55:38 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 18:55:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 18:55:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 18:55:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 18:55:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 18:55:45 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 15.607 seconds (JVM running for 19.354)
+""2022-01-10 18:57:29 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 18:57:29 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 18:57:29 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 2 ms
+""2022-01-10 18:57:30 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:57:30 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:57:30 [http-nio-8080-exec-2] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:57:30 [http-nio-8080-exec-2] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 18:58:25 [http-nio-8080-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:58:25 [http-nio-8080-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:58:25 [http-nio-8080-exec-4] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:58:25 [http-nio-8080-exec-4] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 18:58:32 [http-nio-8080-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:58:32 [http-nio-8080-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:58:32 [http-nio-8080-exec-6] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:58:32 [http-nio-8080-exec-6] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 18:59:09 [http-nio-8080-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:59:09 [http-nio-8080-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:59:09 [http-nio-8080-exec-8] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:59:09 [http-nio-8080-exec-8] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 18:59:12 [http-nio-8080-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:59:12 [http-nio-8080-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:59:12 [http-nio-8080-exec-10] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:59:12 [http-nio-8080-exec-10] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 18:59:14 [http-nio-8080-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 18:59:14 [http-nio-8080-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 18:59:14 [http-nio-8080-exec-1] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 18:59:14 [http-nio-8080-exec-1] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 19:00:05 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 19:00:10 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:00:11 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 19:00:12 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 19:00:27 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 4884 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 19:00:27 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 19:00:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 19:00:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 608 ms. Found 6 JPA repository interfaces.
+""2022-01-10 19:00:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7b059d6a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 19:00:35 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 19:00:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 19:00:37 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 19:00:37 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 19:00:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 19:00:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 10215 ms
+""2022-01-10 19:00:38 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 19:00:39 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 19:00:39 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 19:00:40 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 19:00:41 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 19:00:42 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 19:00:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 19:00:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:00:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 19:00:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 19:00:52 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 27.302 seconds (JVM running for 32.175)
+""2022-01-10 19:01:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 19:01:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 19:01:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 3 ms
+""2022-01-10 19:02:07 [http-nio-8080-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 19:02:07 [http-nio-8080-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 19:02:07 [http-nio-8080-exec-1] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 19:06:00 [http-nio-8080-exec-1] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 19:06:18 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 19:06:18 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:06:18 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 19:06:18 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 19:06:36 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 5848 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 19:06:36 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 19:06:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 19:06:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 177 ms. Found 6 JPA repository interfaces.
+""2022-01-10 19:06:40 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bbadd0c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 19:06:40 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 19:06:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 19:06:42 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 19:06:42 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 19:06:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 19:06:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 6123 ms
+""2022-01-10 19:06:44 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 19:06:45 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 19:06:45 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 19:06:46 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 19:06:47 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 19:06:47 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 19:06:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 19:06:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:06:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 19:06:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 19:06:56 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 20.991 seconds (JVM running for 28.296)
+""2022-01-10 19:06:58 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 19:06:58 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 19:06:58 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 3 ms
+""2022-01-10 19:07:14 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 19:07:14 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 19:07:14 [http-nio-8080-exec-2] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 19:07:17 [http-nio-8080-exec-2] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 19:07:48 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 19:07:48 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:07:48 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 19:07:48 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 19:08:04 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 8628 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 19:08:04 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 19:08:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 19:08:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 249 ms. Found 6 JPA repository interfaces.
+""2022-01-10 19:08:09 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a9b155a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 19:08:09 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 19:08:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 19:08:10 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 19:08:10 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 19:08:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 19:08:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 6797 ms
+""2022-01-10 19:08:12 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 19:08:13 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 19:08:13 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 19:08:14 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 19:08:14 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 19:08:15 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 19:08:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 19:08:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:08:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 19:08:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 19:08:22 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 20.499 seconds (JVM running for 25.52)
+""2022-01-10 19:08:32 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 19:08:32 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 19:08:32 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+""2022-01-10 19:08:41 [http-nio-8080-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 19:08:41 [http-nio-8080-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «areas» viola la llave foránea «ar_ci_fk»
+  Detail: La llave (ar_ciudad)=(123456) no está presente en la tabla «ciudades».
+""2022-01-10 19:08:41 [http-nio-8080-exec-1] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 19:08:45 [http-nio-8080-exec-1] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 19:09:01 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 19:09:01 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:09:01 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 19:09:01 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 19:09:13 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 3920 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 19:09:13 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 19:09:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 19:09:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 224 ms. Found 6 JPA repository interfaces.
+""2022-01-10 19:09:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$94355975] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 19:09:16 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 19:09:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 19:09:18 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 19:09:18 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 19:09:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 19:09:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 5106 ms
+""2022-01-10 19:09:19 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 19:09:19 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 19:09:19 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 19:09:20 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 19:09:21 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 19:09:21 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 19:09:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 19:09:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:09:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 19:09:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 19:09:28 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 16.138 seconds (JVM running for 19.609)
+""2022-01-10 19:09:43 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 19:09:43 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 19:09:43 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+""2022-01-10 19:09:45 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper- SQL Error: 0, SQLState: 23503
+""2022-01-10 19:09:45 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper- ERROR: inserción o actualización en la tabla «activos_fijos» viola la llave foránea «af_ta_fk»
+  Detail: La llave (af_tipoactivo)=(123456) no está presente en la tabla «tipo_activo».
+""2022-01-10 19:09:45 [http-nio-8080-exec-2] INFO  o.h.e.j.b.internal.AbstractBatchImpl- HHH000010: On release of batch it still contained JDBC statements
+""2022-01-10 19:09:45 [http-nio-8080-exec-2] ERROR com.asd.activos_fijos.rest.AreasRest- could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+""2022-01-10 19:48:29 [RMI TCP Connection(47)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 19:48:44 [RMI TCP Connection(47)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:48:45 [RMI TCP Connection(47)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 19:48:45 [RMI TCP Connection(47)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 19:49:36 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 6912 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 19:49:36 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 19:49:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 19:49:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 200 ms. Found 6 JPA repository interfaces.
+""2022-01-10 19:49:41 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$798a3031] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 19:49:41 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 19:49:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 19:49:42 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 19:49:42 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 19:49:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 19:49:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 5596 ms
+""2022-01-10 19:49:43 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 19:49:44 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 19:49:44 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 19:49:44 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 19:49:45 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 19:49:46 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 19:49:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 19:49:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:49:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 19:49:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 19:49:53 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 18.475 seconds (JVM running for 25.085)
+""2022-01-10 19:52:54 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 19:52:54 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 19:52:54 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+""2022-01-10 19:58:39 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 19:59:02 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 19:59:03 [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 19:59:05 [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 19:59:53 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 8616 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 19:59:53 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 20:00:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 20:00:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 735 ms. Found 6 JPA repository interfaces.
+""2022-01-10 20:00:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ddfb296b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 20:00:05 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 20:00:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 20:00:11 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 20:00:11 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 20:00:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 20:00:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 18780 ms
+""2022-01-10 20:00:14 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 20:00:16 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 20:00:16 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 20:00:17 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 20:00:19 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 20:00:21 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 20:00:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 20:00:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 20:00:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 20:00:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 20:00:36 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 47.042 seconds (JVM running for 58.536)
+""2022-01-10 20:01:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 20:01:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 20:01:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+""2022-01-10 20:01:53 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 20:01:53 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 20:01:53 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 20:01:53 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+""2022-01-10 20:02:26 [main] INFO  c.a.a.ActivosFijosApplication- Starting ActivosFijosApplication using Java 17 on LEONARDORAM969B with PID 4904 (C:\Users\lramirez\repositorio\activos_fijos\target\classes started by lramirez in C:\Users\lramirez\repositorio\activos_fijos)
+""2022-01-10 20:02:26 [main] INFO  c.a.a.ActivosFijosApplication- No active profile set, falling back to default profiles: default
+""2022-01-10 20:02:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-01-10 20:02:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate- Finished Spring Data repository scanning in 1110 ms. Found 6 JPA repository interfaces.
+""2022-01-10 20:02:40 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2255cef8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2022-01-10 20:02:41 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping- Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""2022-01-10 20:02:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+""2022-01-10 20:02:49 [main] INFO  o.a.catalina.core.StandardService- Starting service [Tomcat]
+""2022-01-10 20:02:49 [main] INFO  o.a.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.56]
+""2022-01-10 20:02:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+""2022-01-10 20:02:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext- Root WebApplicationContext: initialization completed in 24306 ms
+""2022-01-10 20:02:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+""2022-01-10 20:02:54 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+""2022-01-10 20:02:54 [main] INFO  o.h.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-01-10 20:02:55 [main] INFO  org.hibernate.Version- HHH000412: Hibernate ORM core version 5.6.3.Final
+""2022-01-10 20:02:56 [main] INFO  o.h.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-01-10 20:02:57 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+""2022-01-10 20:03:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-01-10 20:03:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 20:03:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-01-10 20:03:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+""2022-01-10 20:03:13 [main] INFO  c.a.a.ActivosFijosApplication- Started ActivosFijosApplication in 48.565 seconds (JVM running for 61.311)
+""2022-01-10 20:03:39 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-01-10 20:03:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+""2022-01-10 20:03:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet- Completed initialization in 3 ms
+""2022-01-10 20:11:26 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin- Application shutdown requested.
+""2022-01-10 20:11:36 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-01-10 20:11:37 [RMI TCP Connection(17)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+""2022-01-10 20:11:37 [RMI TCP Connection(17)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+"

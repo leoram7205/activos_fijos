@@ -44,6 +44,7 @@ public class PersonasServiceImpl extends GenericServiceImpl<Personas, String> im
 
 	@Override
 	public PersonasDTO findByid(String id) {
+		
 		Optional<Personas> personas = this.personasDao.findById(id);
 		PersonasDTO personasDto = MHelpers.modelMapper().map(personas.get(), PersonasDTO.class);
 		

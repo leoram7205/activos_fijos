@@ -1,6 +1,5 @@
 package com.asd.activos_fijos.service;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import com.asd.activos_fijos.commons.GenericService;
@@ -13,7 +12,7 @@ public interface AreasService extends GenericService<Areas, String>{
 	
 	AreasDTO findByid(String id);
 	
-	AreasDTO save(AreasDTO areasDto) throws SQLException;
+	AreasDTO save(AreasDTO areasDto) ;
 	
 	void delete(AreasDTO areasDto);
 	

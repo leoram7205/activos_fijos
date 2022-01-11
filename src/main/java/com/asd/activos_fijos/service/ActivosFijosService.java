@@ -18,8 +18,10 @@ public interface ActivosFijosService extends GenericService<ActivosFijos, String
 	
 	ActivosFijosDTO findByAfSerial(String serial);
 	
-	ActivosFijosDTO save(ActivosFijosDTO activosFijosDto) throws Exception;
+	ActivosFijosDTO save(ActivosFijosDTO activosFijosDto);
 	
 	void delete(ActivosFijosDTO activosFijosDto);
+	
+	void validaDatos(ActivosFijosDTO activosFijosDto);
 	
 }
